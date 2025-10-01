@@ -19,7 +19,7 @@ app.use(
     origin: (origin, callback) => {
       // eslint-disable-next-line
       // @todo: Add your whitelisted URL here
-      const whitelist = ['http://localhost:5173', 'https://yourproductionurl.com'];
+      const whitelist = ['http://localhost:5173', 'https://sample-app-frontend.vercel.app'];
       if (whitelist.indexOf(origin) === -1) {
         callback(new Error(`Not allowed by CORS: ${origin}`));
       } else {
